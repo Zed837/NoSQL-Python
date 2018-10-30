@@ -14,19 +14,10 @@ from os import path
 time.sleep(1)
 print(bcolors.FAIL +  "Loading the DataBase....")
 time.sleep(2)
-
-
-print (bcolors.OKBLUE + "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
-time.sleep(2)
-print ("--------------------------DONE---------------------\n")
-print ("#     # ####### #       #       #######")
-print ("#     # #       #       #       #     #")
-print ("#     # #       #       #       #     #")
-print ("####### #####   #       #       #     #")
-print ("#     # #       #       #       #     #")
-print ("#     # #       #       #       #     #")
-print ("#     # ####### ####### ####### #######")
-time.sleep(2)
+print ("--------------------------------------------------------------------------------------------------------")
+print ("---------------------------Control the code, control the world--------------------------")
+print ("--------------------------------------------------------------------------------------------------------")
+time.sleep(4)
 raspuns = ( "----Now you can write in the database------")
 print (raspuns)
 def calcul_baza(numeF ,prenumeF ,telefonF ,localizatF ,telefonpF ,cnpF ,fumatorF, dnasteriF  ,numetF ,numemF ):
