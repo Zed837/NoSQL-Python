@@ -1,17 +1,25 @@
 #!/usr/bin/python3.7.1
 import time
 import sys
-
+class bcolors:
+    HEADER = '\033[95m'
+    OKBLUE = '\033[94m'
+    OKGREEN = '\033[92m'
+    WARNING = '\033[93m'
+    FAIL = '\033[91m'
+    ENDC = '\033[0m'
+    BOLD = '\033[1m'
+    UNDERLINE = '\033[4m'
 from os import path
-time.sleep(2)
-print( "Loading the DataBase....")
 time.sleep(1)
+print(bcolors.FAIL +  "Loading the DataBase....")
+time.sleep(5)
 
 
-print ("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
+print (bcolors.OKBLUE + "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
 time.sleep(2)
 print ("--------------------------DONE---------------------\n")
-time.sleep(1)
+time.sleep(2)
 raspuns = ( "----Now you can write in the database------")
 print (raspuns)
 def calcul_baza(numeF ,prenumeF ,telefonF ,localizatF ,telefonpF ,cnpF ,dnasteriF  ,numetF ,numemF ):
