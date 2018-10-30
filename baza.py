@@ -13,7 +13,7 @@ class bcolors:
 from os import path
 time.sleep(1)
 print(bcolors.FAIL +  "Loading the DataBase....")
-time.sleep(5)
+time.sleep(3)
 
 
 print (bcolors.OKBLUE + "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
@@ -54,5 +54,3 @@ print ("-------------------------")
 print ("THE VICTIM")
 calcul_baza(nume ,prenume ,telefon ,localizat ,telefonp ,cnp ,dnasteri  ,numet ,numem )
 sys.stdout.close()
-
-
