@@ -15,7 +15,7 @@ from os import path
 x = datetime.datetime.now()
 print(x)
 time.sleep(1)
-print(bcolors.FAIL +  "Loading the DataBase....")
+print(bcolors.WARNING +  "Loading the DataBase....")
 time.sleep(2)
 print ("--------------------------------------------------------------------------------------------------------")
 print ("---------------------------Control the code, control the world--------------------------")
