@@ -1,5 +1,6 @@
 #!/usr/bin/python3.7.1
 import time
+import datetime
 import sys
 class bcolors:
     HEADER = '\033[95m'
@@ -11,6 +12,8 @@ class bcolors:
     BOLD = '\033[1m'
     UNDERLINE = '\033[4m'
 from os import path
+x = datetime.datetime.now()
+print(x)
 time.sleep(1)
 print(bcolors.FAIL +  "Loading the DataBase....")
 time.sleep(2)
@@ -20,6 +23,17 @@ print ("------------------------------------------------------------------------
 time.sleep(4)
 raspuns = ( "----Now you can write in the database------")
 print (raspuns)
+while True:
+   answer = input('Doresti sa vezi baza de date?\n')
+   if answer.lower().startswith("da"):
+     f = open("informatiistocate.txt", "r")
+     print(f.read())
+
+
+   elif answer.lower().startswith("nu"):
+      print("ok, acum poti scrie in Baza de Date!  ")
+      break
+
 def calcul_baza(numeF ,prenumeF ,telefonF ,localizatF ,telefonpF ,cnpF ,fumatorF, dnasteriF  ,numetF ,numemF ):
   print ("\n [1]Nume Elev= " + numeF + ", \n [2]Prenume Elev= " + prenumeF + ", \n [3]Telefon = " + telefonF +  " \n [4]Localizat= " + localizatF +  ",\n [5]Telefon Parinte " + telefonpF + ",\n [6]CNP-UL " + cnpF + ",\n [7]Fumator= " + fumatorF +  ",\n [8]Data Nasteri = " + dnasteriF + ",\n [9]Numele Tata= " + numetF + ",\n [10]Numele Mama = " + numeF + ".")
 
@@ -34,7 +48,7 @@ dnasteri = input("[8]Data nasterii= ")
 numet = input("[9]Numele tatalui= ") 
 numem = input("[10]Numele mamei= ")
 while True:
-   answer = input('Informatile sunt corecte?:da sau nu?')
+   answer = input('Informatile sunt corecte?:da sau nu?\n')
    if answer.lower().startswith("da"):
     break    
       
@@ -53,4 +67,6 @@ print (raspuns)
 
 calcul_baza(nume ,prenume ,telefon ,localizat ,telefonp ,cnp ,fumator ,dnasteri  ,numet ,numem )
 sys.stdout.close()
+
+
 
