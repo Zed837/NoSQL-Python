@@ -2,6 +2,7 @@
 import time
 import datetime
 import sys
+import base64
 class bcolors:
     HEADER = '\033[95m'
     OKBLUE = '\033[94m'
@@ -17,10 +18,39 @@ print(x)
 time.sleep(1)
 print(bcolors.WARNING +  "Loading the DataBase....")
 time.sleep(2)
+print("Welcome...")
+welcome = input("Ai un cont? da/nu: ")
+if welcome == "nu":
+    while True:
+        username  = input("Introdu numele:")
+        password  = input("Introdu parola:")
+        password1 = input("Reintrodu parola:")
+        if password == password1:
+            file = open(username+".txt", "w")
+            file.write(username+":"+password)
+
+            file.close()
+            welcome = "y"
+            break
+        print("Parolele nu se POTRIVESC!")
+ 
+if welcome == "da":
+    while True:
+        login1 = input("Login:")
+        login2 = input("Password:")
+        file = open(login1+".txt", "r")
+        data   = file.readline()
+        file.close()
+        if data == login1+":"+login2:
+            print("Welcome")
+            break
+        print("Nume incorect sau parola incorecta")
+         
 print ("--------------------------------------------------------------------------------------------------------")
 print ("---------------------------Control the code, control the world--------------------------")
 print ("--------------------------------------------------------------------------------------------------------")
 time.sleep(4)
+
 raspuns = ( "----Now you can write in the database------")
 print (raspuns)
 while True:
@@ -67,6 +97,7 @@ print (raspuns)
 
 calcul_baza(nume ,prenume ,telefon ,localizat ,telefonp ,cnp ,fumator ,dnasteri  ,numet ,numem )
 sys.stdout.close()
+
 
 
 
