@@ -35,7 +35,7 @@ while True:
       break
 
 def calcul_baza(numeF ,prenumeF ,telefonF ,localizatF ,telefonpF ,cnpF ,fumatorF, dnasteriF  ,numetF ,numemF ):
-  print ("\n [1]Nume Elev= " + numeF + ", \n [2]Prenume Elev= " + prenumeF + ", \n [3]Telefon = " + telefonF +  " \n [4]Localizat= " + localizatF +  ",\n [5]Telefon Parinte " + telefonpF + ",\n [6]CNP-UL " + cnpF + ",\n [7]Fumator= " + fumatorF +  ",\n [8]Data Nasteri = " + dnasteriF + ",\n [9]Numele Tata= " + numetF + ",\n [10]Numele Mama = " + numeF + ".")
+  print ("\n [1]Nume Elev= " + numeF + ", \n [2]Prenume Elev= " + prenumeF + ", \n [3]Telefon = " + telefonF +  " \n [4]Localizat= " + localizatF +  ",\n [5]Telefon Parinte " + telefonpF + ",\n [6]CNP-UL " + cnpF + ",\n [7]Fumator= " + fumatorF +  ",\n [8]Data Nasteri = " + dnasteriF + ",\n [9]Numele Tata= " + numetF + ",\n [10]Numele Mama = " + numemF + ".")
 
 nume = input( "[1]Scrie numele elevului= ")
 prenume = input("[2]Scrie prenumele elevului= ")
