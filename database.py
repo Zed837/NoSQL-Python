@@ -30,7 +30,7 @@ if welcome == "nu":
             file.write(username+":"+password)
 
             file.close()
-            welcome = "y"
+            welcome = "da"
             break
         print("Parolele nu se POTRIVESC!")
  
